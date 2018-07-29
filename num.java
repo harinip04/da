@@ -7,6 +7,6 @@ public class num
    if(a==0)
     System.out.print("zero");
   else
-    (a<0)?System.out.print("negative"):System.out.print("positive");
+    System.out.print((a<0)?"negative":"positive");
    }
 }
