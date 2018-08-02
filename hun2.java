@@ -10,10 +10,15 @@ public class hun2
 		for(int i=0;i<n;i++)
 		   a[i]=sc.nextInt();
 		Arrays.sort(a);
-		int c=n;
+		int c=n,sum=0;
         for(int i=0;i<n;i++)
            b[i]=a[--c];
+         for(int i=0;i<n;i++)
+		       sum+=b[i];
+		 if(sum>0)
 			for(int i=0;i<n;i++)
-		 System.out.print(b[i]);
+		        System.out.print(b[i]);
+		 else
+		        System.out.print(sum);
 	}
 }
